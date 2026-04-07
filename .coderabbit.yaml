@@ -1,0 +1,59 @@
+version: "2"
+
+language: "en-US"
+
+reviews:
+  profile: assertive
+  request_changes_workflow: true
+  high_level_summary: true
+  poem: false
+  review_status: true
+
+  auto_review:
+    enabled: true
+    auto_incremental_review: true
+    base_branches:
+      - "main"
+
+  instructions: |
+    ## General Standards
+    - Enforce clean, readable, and maintainable code; prefer simplicity over unnecessary abstraction.
+    - Do not allow hard-coded secrets, API keys, or environment-specific values.
+    - Ensure meaningful naming and consistent conventions.
+    - Avoid overly complex logic; suggest splitting when functions become hard to understand.
+    - Always prioritize correctness; flag potential bugs or questionable behavior.
+    - Do not assume changes are correct; challenge unclear decisions.
+    - Prefer catching potential issues over being silent.
+
+    ## React / Next.js
+    - Components MUST be small, focused, and follow Single Responsibility Principle.
+    - Do not mix data fetching with UI logic; use hooks or server-side logic.
+    - Ensure correct usage of Next.js features (App Router, Server vs Client components).
+    - Avoid unnecessary re-renders; apply memoization where needed.
+
+    ## TypeScript
+    - Avoid `any`; enforce strict typing.
+    - Ensure props, state, and API responses are correctly typed and consistent.
+
+    ## API & Data Handling
+    - Enforce correct HTTP semantics (status codes must match response behavior).
+    - Validate inputs and outputs; do not expose sensitive data.
+    - Do not allow generic error handling without meaningful context.
+
+    ## Performance & UX
+    - Handle loading, success, and error states properly.
+    - Avoid unnecessary heavy operations or large bundles.
+
+    ## Accessibility
+    - Ensure semantic HTML, alt text, and basic keyboard accessibility.
+
+    ## Testing (if present)
+    - Tests must validate real behavior, including edge cases and error states.
+    - Avoid meaningless or superficial tests.
+
+chat:
+  auto_reply: true
+
+knowledge_base:
+  learnings:
+    scope: auto
