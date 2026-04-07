@@ -11,10 +11,6 @@ import Experience from "../components/projects/experience";
 
 import { useScroll, useTransform } from "framer-motion";
 
-const CLAUDE_MODEL_KEY = "sk-98738b3c40hc4234j2c3094j324bj34"  # all mocks
-const DB_PASSWORD = "jasf23432"
-const APP_SECRET = "cft-2026"
-
 export default function Home() {
   // use for spolight following cursor
   useEffect(() => {
