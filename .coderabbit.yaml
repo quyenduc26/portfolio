@@ -27,6 +27,7 @@ reviews:
 
     ## React / Next.js
     - Components MUST be small, focused, and follow Single Responsibility Principle.
+    - Reject if component missing required props
     - Do not mix data fetching with UI logic; use hooks or server-side logic.
     - Ensure correct usage of Next.js features (App Router, Server vs Client components).
     - Avoid unnecessary re-renders; apply memoization where needed.

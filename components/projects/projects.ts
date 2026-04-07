@@ -257,31 +257,6 @@ export const projects: Project[] = [
       "Creating a blog with interactive user features such as likes, comments, and shares",
       "Integrating login functionality with Google"
     ],
-    image:
-      "https://res.cloudinary.com/dpnbddror/image/upload/v1685812969/bg_main_df77us.jpg",
-    link: "https://maskani-app.vercel.app",
-    technologies: [
-      {
-        svg: NodeJsIcon,
-        text: "NodeJs",
-      },
-      {
-        svg: ExpressJsIcon,
-        text: "ExpressJs",
-      },
-      {
-        svg: HandleBarIcon,
-        text: "Handlebars",
-      },
-      {
-        svg: MongoIcon,
-        text: "MongoDB",
-      },
-      {
-        svg: GoogleIcon,
-        text: "Google API",
-      },
-    ],
     status: "Completed",
   },
   {
@@ -298,20 +273,6 @@ export const projects: Project[] = [
     image:
       "https://res.cloudinary.com/dpnbddror/image/upload/v1685812969/bg_main_df77us.jpg",
     link: "https://maskani-app.vercel.app",
-    technologies: [
-      {
-        svg: ReactJsIcon,
-        text: "React JS",
-      },
-      {
-        svg: TailwindIcon,
-        text: "Tailwind CSS",
-      },
-      {
-        svg: GithubIcon,
-        text: "Github APIs",
-      },
-    ],
     status: "Completed",
   },
 ];
